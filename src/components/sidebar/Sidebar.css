@@ -1,0 +1,132 @@
+/* side bar css */
+.sidebar {
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding: 25px 15px;
+
+    /* sidebar animation */
+    width: 80px;
+    transition: width 0.3s ease;
+    overflow: hidden; 
+}
+
+/* sidebar animation */
+.sidebar.extended {
+    width: 160px;
+}
+
+.sidebar p {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    white-space: nowrap;
+}
+  
+.sidebar.extended p {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* icons */
+.sidebar .menu {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sidebar .new-chat-icon {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.sidebar .message-icon {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.sidebar .help-icon {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.sidebar .activity-icon {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.sidebar .settings-icon {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* menu css */
+.sidebar .menu {
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* new chat css*/
+.sidebar .new-chat {
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: rgb(21, 21, 21);
+    border-radius: 50px;
+    font-size: 14px;
+    color: rgb(209, 209, 209);
+    cursor: pointer;
+}
+
+/* recent top */
+.sidebar .recent {
+    margin-top: 10px;
+    flex-direction: column;
+    animation: fadeIn 1.5s;
+}
+
+.sidebar .recent-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sidebar .recent-entry {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+    /* was 40*/
+    padding-right: 30px;
+    border-radius: 50px;
+    color: rgb(209, 209, 209);
+    background-color: rgb(21, 21, 21);
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.sidebar .recent-entry:hover {
+    background-color: rgb(50, 50, 50);
+    box-shadow: 10px 10px 20px rgba(214, 139, 255, 0.338);
+}
+
+/* recent bottom*/
+.sidebar .bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .bottom-item {
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+/* mobile responsiveness */
+@media (max-width:600px) {
+    .sidebar {
+        display: none;
+    }
+}
