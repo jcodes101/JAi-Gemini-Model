@@ -107,7 +107,7 @@ const Main = () => {
                     </div>
 
                     <p className="bottom-info">
-                        Type wise boy.
+                        Welcome to JAi.
                         <br/>
                         <br/>
                         Disclaimer: This project is independently developed and is not affiliated with, endorsed by, or intended to replicate Google's Gemini AI. All trademarks and product names are the property of their respective owners.
