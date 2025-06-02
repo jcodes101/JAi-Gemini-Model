@@ -6,7 +6,8 @@
 import { GoogleGenAI } from '@google/genai';
 
 // VITE_ prefix needed for Vite apps being developed when using API's
-const MODEL_NAME = 'gemini-2.5-pro-exp-03-25';
+// const MODEL_NAME = 'gemini-2.5-pro-exp-03-25';
+const MODEL_NAME = 'gemini-2.5-flash-preview-05-20';
 const API_KEY = import.meta.env.VITE_GOOGLE_GEMINI_API_KEY;
 
 async function runChat(prompt) {
