@@ -18,8 +18,6 @@ VALID MODELS as of 12/4/2025:
 const MODEL_NAME = 'gemini-2.5-flash';
 const API_KEY = import.meta.env.VITE_GOOGLE_GEMINI_API_KEY;
 
-console.log("API KEY:", API_KEY);
-
 async function runChat(prompt) {
   const ai = new GoogleGenAI({
     apiKey: API_KEY,
